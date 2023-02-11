@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>hexo+github搭建博客</title>
+      <link href="/post/16778.html"/>
+      <url>/post/16778.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h2><p><a href="https://blog.csdn.net/weixin_52799373/article/details/123840137">Node.js</a></p><p><a href="https://blog.csdn.net/weixin_52799373/article/details/123840137">https://blog.csdn.net/weixin_52799373/article/details/123840137</a></p><p><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git</a></p><p><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p><h2 id="本地博客搭建"><a href="#本地博客搭建" class="headerlink" title="本地博客搭建"></a>本地博客搭建</h2><p>1.打开git bash here安装cnpm </p><p>命令：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry==https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>安装后验证：<code>cnpm -v</code> 出现版本号说明安装成功</p><p>2.安装hexo （安装博客框架）</p><p>命令：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>安装后验证：<code>hexo -v</code> 出现版本号说明安装成功</p><p>3.在电脑某位置新建文件夹（随意取名·，例如·我的为blog,以下出现的blog即为我现在创建的文件夹）,打开该文件夹，鼠标右击文件夹空白处打开git bish here.</p><p>​    并依次执行以下命令:</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init  #初始化命令，hexo会自动下载一些文件到这个目录，包括node_modules等</span><br><span class="line">hexo g     #生成命令</span><br><span class="line">hexo s     #启动服务</span><br></pre></td></tr></table></figure><p>如果hexo init 命令执行不成功，可能是网络原因，可多试几次，如果仍未成功，可换成这条命令</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx hexo init &quot;你想创建的报名&quot;</span><br></pre></td></tr></table></figure><p>输入 hexo s 后，你便可通过<a href="http://localhost:4000/%E8%AE%BF%E9%97%AE%E4%BD%A0%E6%90%AD%E5%BB%BA%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E4%BA%86">http://localhost:4000/访问你搭建的本地博客了</a></p><h2 id="上传至github服务器"><a href="#上传至github服务器" class="headerlink" title="上传至github服务器"></a>上传至github服务器</h2><h3 id="github账号注册"><a href="#github账号注册" class="headerlink" title="github账号注册"></a>github账号注册</h3><p>可自行尝试或搜索</p><h3 id="生成ssh-keys"><a href="#生成ssh-keys" class="headerlink" title="生成ssh keys"></a>生成ssh keys</h3><p>打开 git bash here 输入以下命令生成ssh keys</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</span><br></pre></td></tr></table></figure><p>执行命令时要敲击四次回车，第二次回车时输入y</p><p>密钥位置：C/USER/用户名/.ssh</p><p>打开.ssh文件夹中后标为pub的文件，复制其中内容</p><p><strong>注意：pub文件放置的，就是我们的公开的ssh码，也是给管理员这个ssh，让他来添加</strong></p><p>打开你的github账号，点击右上角头像，点击其中的setting，点击左边的SSH and GPG keys,选择新建ssh keys </p><p>Title：随意填写</p><p>Key：将本地的id_rsa.pub文件用记事本打开，复制全部内容粘贴到GitHub 仓库的SSH Keys 位置</p><h3 id="在github上搭建仓库"><a href="#在github上搭建仓库" class="headerlink" title="### 在github上搭建仓库"></a>### 在github上搭建仓库</h3><p>点击主页右方的new</p><p>Repository name;你的github用户名+github.io</p><p>其他均可保持默认，点击Create repository</p><h3 id="将博客部署到GitHub主页上"><a href="#将博客部署到GitHub主页上" class="headerlink" title="将博客部署到GitHub主页上"></a>将博客部署到GitHub主页上</h3><p>打开你在上面步骤新建的文件夹（例如我新建的为blog,即为打开blog），右击打开 git bush here安装 hexo-deployer-git 插件 </p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>编辑blog文件夹内的_config.yml 文件，在末尾进行修改</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: github上对应仓库的ssh链接 or  github上对应的https地址，如：https://github.com/Github用户名/Github用户名.github.io.git            </span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure><p>在git bush here内输入命令：hexo d,把本地博客推送到GitHub</p><p>在此过程中可能会需要你输入github username 和 password    </p><p>至此，你便可以通过 你的github用户名.+github.io访问你的博客了！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 搭建博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/post/1.html"/>
       <url>/post/1.html</url>
       
-        <content type="html"><![CDATA[<p>s</p><p>！市场的</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       
