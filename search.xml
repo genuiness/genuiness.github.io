@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>web学习</title>
+      <link href="/post/39276.html"/>
+      <url>/post/39276.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="border"><a href="#border" class="headerlink" title="border"></a>border</h3><p>border-width；定义边框粗细<br>border-style：边框样式  dashed(虚线边框) dotted(点线边框) solid(实线边框)<br>border-color：边框颜色<br>border-collapse:合并相邻的边框</p><h3 id="清楚内外边距"><a href="#清楚内外边距" class="headerlink" title="清楚内外边距"></a>清楚内外边距</h3><p>*{<br>margin:0<br>padding:0<br>}</p><h3 id="padding（内边距）"><a href="#padding（内边距）" class="headerlink" title="padding（内边距）:"></a>padding（内边距）:</h3><p>1个值：上下左右<br>2：上下，左右<br>3：上，左右，下<br>4：上，左，右，下</p><h3 id="overflower-hidden-防塌陷"><a href="#overflower-hidden-防塌陷" class="headerlink" title="overflower.hidden:防塌陷"></a>overflower.hidden:防塌陷</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo+github搭建博客</title>
       <link href="/post/16778.html"/>
       <url>/post/16778.html</url>
