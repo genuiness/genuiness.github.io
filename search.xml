@@ -8,9 +8,21 @@
       <link href="/post/7370.html"/>
       <url>/post/7370.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parseInt() #解析字符串，取整数</span><br></pre></td></tr></table></figure><p>winddows对象:alert、close、confirm</p><p>分割php服务器脚本的分隔符：<?php...?></p><p>B/S三层架构：展示层、业务逻辑层、数据访问层</p><p>对象构成成分：对象名（标识）、属性、操作</p><p>软件工程三要素：方法、工具、过程</p><p>http1.1协议请求方法;get post  option head delete connect</p><p>font-style取值:nomal(确省值) italic（斜体显示） oblique（斜体显示）</p><p>javascript内置对象：String Mata Array Global  Data </p><p>onLoad：页面加载时执行</p><p> onError:页面加载错误时执行</p><p>onFocus:元素获得焦点时执行</p><p>onBlur:元素失去焦点时执行</p><p>PHP不支持<code>&lt;!--这是注释--&gt;</code></p><p>Servet遵循的是java语言的编程标准，jsp更多遵循的是脚本语言的编程标准</p>]]></content>
       
       
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 二级web相关知识 </tag>
+            
+        </tags>
       
     </entry>
     
