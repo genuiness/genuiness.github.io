@@ -71,7 +71,7 @@
       <link href="/post/46982.html"/>
       <url>/post/46982.html</url>
       
-        <content type="html"><![CDATA[<p>promise是一门新的技术，promise时js中进行异步编程的新解决方案</p><p>异步编程:</p><p>fs 文件操作；数据库操作；AJAX；定时器</p><h3 id="为什么用promise："><a href="#为什么用promise：" class="headerlink" title="为什么用promise："></a>为什么用promise：</h3><p>1.指定回调函数的方式的更加灵活</p><p>2.支持链式调用，可以解决回调地狱问题</p>]]></content>
+        <content type="html"><![CDATA[<p>promise是一门新的技术，promise是js中进行异步编程的新解决方案</p><p>异步编程:</p><p>fs 文件操作；数据库操作；AJAX；定时器</p><h3 id="为什么用promise："><a href="#为什么用promise：" class="headerlink" title="为什么用promise："></a>为什么用promise：</h3><p>1.指定回调函数的方式的更加灵活</p><p>2.支持链式调用，可以解决回调地狱问题</p>]]></content>
       
       
       <categories>
